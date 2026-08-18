@@ -1,0 +1,68 @@
+# --- Python bytecode / build artifacts -------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+sdist/
+wheels/
+*.egg-info/
+*.egg
+.eggs/
+MANIFEST
+pip-wheel-metadata/
+share/python-wheels/
+_version_generated.py
+
+# --- Virtual environments ---------------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# --- Tool caches ------------------------------------------------------------------------------
+.ruff_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytest_cache/
+.pytype/
+.pyre/
+.tox/
+.nox/
+.cache/
+.hypothesis/
+__pypackages__/
+
+# --- Test & coverage --------------------------------------------------------------------------
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+nosetests.xml
+*.cover
+junit*.xml
+
+# --- switchboard-specific ---------------------------------------------------------------------
+# eval replay cache (evals/fixtures.py)
+.sb-eval-cache/
+# in-flight JSONL sink writes
+*.jsonl.tmp
+# mkdocs build output
+site/
+
+# --- Editors / OS -----------------------------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Secrets ----------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
